@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet"
+           type="text/css"
+           href="../style.css">
+     <title>Rakko TEC</title>
+</head>
+<body  onscroll="nodisp();">
+    <div class="header"><a class="title-top" href="../index.html">Rakko TEC</a><span tabindex="2" class="header-menu-button">menu</span>
+    
+    <div class="header-menu">
+        <a href="../index.html">TOP</a>
+        <a href="./index.html">RecipeCardBookの紹介・使い方</a>
+        <a href="../illustration/index.html">イラスト置き場</a>
+    </div>
+    </div>
+
+    <img class="app-icon" src="../img/appicon/recipe.png"/>
+    <div class="app-abstract">
+        <p class="abstract">RecipeCardBook</p>
+        <p class="abstract">使い方</p>
+    </div>
+
+    <div class="mokuji">目次</div>
+    <ol class="howto-list">
+            <li><a href="#registerrecipe">レシピの新規作成</a></li>
+            <li><a href="#editrecipe">レシピの使い方</a></li>
+            <li><a href="#webrecipe">Webサイトからレシピを読み込む方法</a></li>
+            <li><a href="#textrecipe">テキストからレシピを読み込む方法</a></li>
+            <li><a href="#sendrecipe">レシピを誰かに送る方法</a></li>
+            <li><a href="#receiverecipe">送ったレシピテキストの読込み方法</a></li>
+            <li><a href="#registerfolder">フォルダの登録・編集・削除</a></li>
+            <li><a href="#sortfolder">フォルダ・レシピの並び替え</a></li>
+            <li><a href="#deploymentfolder">フォルダの展開・折り畳み</a></li>
+    </ol>
+    
+    <h2 id="registerrecipe">レシピの新規作成</h2>
+    <div class="list">
+    <p>画像の＋ボタンをタップして項目を入力して保存をタップします。</p>
+    <img src="img/screenshot/recipe-register.jpg"/>
+
+    <p><a href="#webrecipe">Webサイトからレシピを読み込む方法はこちら</a></p>
+    </div>
+
+    <h2 id="editrecipe">レシピの使い方</h2>
+    <div class="list">
+    <p>レシピは人数、材料の分量を変更することで自動で計算されます。</p>
+    <img src="img/screenshot/recipe-edit.jpg"/>
+    <img src="img/screenshot/recipe-editend.jpg"/>
+    <p>単位を変換することができます。</p>
+    <img src="img/screenshot/recipe-editunit.jpg"/>
+    </div>
+
+    <h2 id="webrecipe">Webサイトからレシピを読み込む方法</h2>
+    <p>Webサイト(または料理アプリ)に掲載されているレシピを読み込むために必要なことは主に<strong>2つ</strong>です。</p>
+    <div class="list">
+        <p><strong>共有ボタン</strong>を押す</p>
+        <p><strong>レシピ帳</strong>を選択する</p>
+    </div>
+    <p>アプリごとの詳しい操作方法を、以下に記載します。</p>
+    <h4>Chromeから読み込む場合</h4>
+    <div class="list">
+        <p>Chromeでレシピの掲載されているページを開きます。</p>
+        <p>メニューボタンをタップします。</p>
+        <img src="img/screenshot/chrome-menu.jpg"/>
+        <p>共有ボタンをタップします。</p>
+        <img src="img/screenshot/chrome-share.jpg"/>
+        <p>共有先として、レシピ帳を選択します。</p>
+        <img src="img/screenshot/chrome-share2.png"/>
+        <img src="img/screenshot/all-share.png"/>
+    </div>
+
+    <h4>FireFoxから読み込む場合</h4>
+    <div class="list">
+        <p>FireFoxでレシピの掲載されているページを開きます。</p>
+        <p>メニューボタンをタップします。</p>
+        <img src="img/screenshot/firefox-menu.jpg"/>
+        <p>共有ボタンをタップします。</p>
+        <img src="img/screenshot/firefox-share.jpg"/>
+        <p>共有先として、レシピ帳を選択します。</p>
+        <img src="img/screenshot/all-share.png"/>
+    </div>
+
+    <h4>Edgeから読み込む場合</h4>
+    <div class="list">
+        <p>Edgeでレシピの掲載されているページを開きます。</p>
+        <p>共有ボタンをタップします。</p>
+        <img src="img/screenshot/edge-share.png"/>
+        <p>共有先として、レシピ帳を選択します。</p>
+        <img src="img/screenshot/all-share.png"/>
+    </div>
+
+    <h4>料理アプリ(cookpad、DELISH KITCHEN、kurashiruなど)から読み込む場合</h4>
+    <div class="list">
+        <p>料理アプリでレシピの掲載されているページを開きます。</p>
+        <p>共有(送る)ボタンをタップします。↓こんな感じのアイコンのことが多いです。</p>
+        <img src="img/share-icon.svg"/>
+        <p>共有先として、レシピ帳を選択します。</p>
+        <img src="img/screenshot/all-share.png"/>
+    </div>
+
+    <h2 id="textrecipe">テキストからレシピを読み込む方法</h2>
+    <div class="list">
+        <p>レシピテキストを全て選択します。</p>
+        <p>出てきた吹き出しの中から、共有ボタンをタップします。</p>
+        <p>共有先として、レシピ帳を選択します。</p>
+        <p class="tips">レシピテキストは適切に改行されている必要があります。</p>
+        <p class="tips">「材料」「作り方」「メモ」と見出しがついていると上手くレシピを抽出できる確率が上がります。</p>
+        <p class="tips">抽出に失敗するとテキストが全てメモ欄に入ります。</p>
+    </div>
+    
+
+    <h2 id="sendrecipe">レシピを誰かに送る方法</h2>
+    <div class="list">
+        <p>送りたいレシピを開きます。</p>
+        <img src="img/screenshot/index.jpg"/>
+        <img src="img/screenshot/recipe.jpg"/>
+        <p>レシピの下部にある、共有アイコンをタップします。</p>
+        <img src="img/screenshot/recipe-share.jpg"/>
+        <p>送信に使うアプリを選んでタップします。</p>
+        <img src="img/screenshot/recipe-share-line.png"/>
+        <p>こんな感じのテキストが送られます。</p>
+        <pre>肉じゃが
+
+材料 (2人分)
+豚肉 … 250g
+じゃがいも … 4個
+たまねぎ … 2個
+にんじん … 1本
+しらたき … 1袋
+砂糖 … 大さじ1.6
+醤油 … 大さじ4
+酒 … 大さじ2
+
+作り方
+1. 肉を炒める
+2. 調味料を入れる
+3. 玉ねぎ、しらたき、にんじん、じゃがいもの順に切って入れる
+4. 蓋をして沸騰状態で20分
+5. 火が通ったら蓋を開けて汁気を飛ばす
+        </pre>
+    </div>
+
+    <h2 id="receiverecipe">送ったレシピテキストの読込み方法</h2>
+    <h4>LINEから読み込む場合</h4>
+    <div class="list">
+        <p>送ったレシピテキストを長押しします。</p>
+        <p>転送ボタンをタップします。</p>
+        <p>転送(1)ボタンをタップします。</p>
+        <p>他のアプリを選択します。</p>
+        <p>共有先として、レシピ帳を選択します。</p>
+    </div>
+
+    <h4>その他のアプリから読み込む場合</h4>
+    <p>アプリによっては、アプリに付属の共有ボタンから読み込めます。</p>
+    <p>それができない場合は、以下の手順で読み込みます。</p>
+    <div class="list">
+        <p>送ったレシピテキストを全て選択します。</p>
+        <p>出てきた吹き出しの中から、共有ボタンをタップします。</p>
+        <p>共有先として、レシピ帳を選択します。</p>
+    </div>
+
+    <h2 id="registerfolder">フォルダの登録・編集・削除</h2>
+    <div class="list">
+    <p>画面をタップすると表示される左上の歯車アイコンをタップします。</p>
+    <img src="img/screenshot/folder-setup.jpg"/>
+    <p>フォルダの登録を選択します。</p>
+    <img src="img/screenshot/register.jpg"/>
+    <p>フォルダを登録する場合は、フォルダ名を入力し、作成をタップします。</p>
+    <img src="img/screenshot/folder-register.jpg"/>
+    <p>フォルダを編集する場合は、下のタブを上にスライドします。</p>
+    <img src="img/screenshot/folder-edit1.jpg"/>
+    <p>フォルダの編集・削除ができます。</p>
+    <img src="img/screenshot/folder-edit2.jpg"/>
+    </div>
+
+    <h2 id="sortfolder">フォルダ・レシピの並び替え</h2>
+    <div class="list">
+    <p>INDEXをタップします。</p>
+    <img src="img/screenshot/folder-index.jpg"/>
+    <p>並び替えをタップします。</p>
+    <img src="img/screenshot/folder-sortset.jpg"/>
+    <p>レシピ・フォルダをドラッグして整理できます。</p>
+    <img src="img/screenshot/folder-sort.jpg"/>
+    <p>INDEXをタップして並び替え完了をタップします。</p>
+    <img src="img/screenshot/folder-sortfinish.jpg"/>
+    </div>
+
+    <h2 id="deploymentfolder">フォルダの展開・折り畳み</h2>
+    
+    <p>フォルダ名の横のアイコンをタップすることで、</p>
+    <p>フォルダの展開または折り畳みができます。</p>
+    
+    <h4>フォルダを全て一気に操作する場合</h4>
+    <div class="list">
+    <p>INDEXをタップします。</p>
+    <img src="img/screenshot/folder-index.jpg"/>
+    <p>すべて折りたたむ、またはすべて展開をタップします。</p>
+    <img src="img/screenshot/folder-sortset.jpg"/>
+    </div>
+
+    <script type="text/javascript" src="../scrollout.js"></script>
+    
+</body>
+
+
+<footer>
+    <a href="#" id="howto-top-bottun" class="howto-top">↑</a>
+</footer>
+
+</html>

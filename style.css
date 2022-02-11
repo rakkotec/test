@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+:root {
+    font-size: 250%;
+    font-family: sans-serif;
+}
+
+body {
+    --body-padding: 1.4rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: var(--body-padding);
+    padding-top: 3rem;
+    overflow-y: scroll;
+    background-image: url(img/background.jpg);
+    background-repeat: repeat;
+    background-color:rgba(255,255,255,0.85);
+	background-blend-mode:lighten;
+    background-size: cover;
+
+}
+
+body::after {
+    height:30mm;
+    margin-bottom: 3rem;
+    content:"";
+    display:block;
+}
+
+.header {
+    --header-font-color: #f5f5f5;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    line-height: 10vw;
+    background-color: black;
+    justify-content: space-between;
+    font-size: 5vw;
+    color: var(--header-font-color);
+}
+
+.header > span {
+    padding:0 1.2rem;
+}
+
+.header-menu-button {
+    /*cursor:pointer;*/
+    cursor:url(img/kasoru.cur) ,pointer;
+}
+
+.header-menu-button:focus {
+    color: transparent;
+    pointer-events: none;
+}
+.header-menu-button:focus::after {
+    content: '×';
+    color: var(--header-font-color);
+}
+
+.header-menu {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: calc(100% - 10vw);
+    top: 10vw;
+    left: 0;
+    padding: 1rem 2rem;
+    line-height: 3rem;
+    background-color: #eee;
+    font-size: 1.2rem;
+    transform-origin: top;
+    transition: transform 0.2s ease-out 0s;
+}
+.header-menu-button:not(:focus) ~ .header-menu {
+    transform: scaleY(0);
+    transition: transform 0.2s ease-out 0.1s;
+}
+
+.header-menu > a {
+    display: block;
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1 {
+    max-height: 100%;
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 5vw;
+}
+
+h2 {
+    max-height: 100%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding-right: var(--body-padding);
+    line-height: 2em;
+    background-color: #aaa;
+    box-shadow: calc(-1 * var(--body-padding)) 0 0 0 #aaa;
+    font-size: 4vw;
+}
+
+.top-img+h2{
+    margin-top:0rem;
+}
+
+h3 {
+    max-height: 100%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding-right: var(--body-padding);
+    line-height: 2em;
+    background-color: #ddd;
+    box-shadow: calc(-1 * var(--body-padding)) 0 0 0 #ddd;
+    font-size: 3vw;
+}
+
+h2 + h3 {
+    margin-top: -2rem;
+}
+
+h4 {
+    max-height: 100%;
+    margin-top: 3rem;
+    font-size: 62.5%;
+}
+
+h4::before {
+    content: "●";
+}
+
+.mokuji{
+    margin-top:1rem;
+    font-size:4vw;
+}
+
+p {
+    max-height: 100%;
+    font-size: 62.5%;
+}
+
+pre {
+    max-height: 100%;
+    padding: 0.8em;
+    border: 1px solid black;
+	white-space: pre-wrap;
+    background-color:rgba(255,255,255,0.7);
+}
+
+strong {
+    background: linear-gradient(transparent 40%, #ffee0080 40%);
+    font-size: 1em;
+    font-weight: normal;
+}
+
+table{
+    background-color:white;
+    border: 0px;
+    word-wrap: break-word;
+}
+
+td {
+    font-size: 3vw;
+}
+
+th {
+    font-size: 2vw;
+    border-bottom: 4px double;
+    text-align: center;
+    color:rgb(41, 46, 0);
+    background: linear-gradient(#459fff,#bddfff);
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+}
+
+.top-img{
+    height:auto;
+    width:100vw;
+    margin-top: -0.6rem;
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+}
+
+.illust-table{
+    font-size: 3vw;
+}
+
+.app-icon {
+    display: inline-block;
+    width: 5rem;
+    border-radius: 20%;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.app-abstract {
+    position: absolute;
+    display: inline-block;
+    margin-left: 1.4rem;
+    margin-right: var(--body-padding);
+    margin-top: 1.2rem;
+    font-size:7vw;
+}
+
+.abstract{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.description{
+    font-size:3vw;
+}
+
+.android-icon{
+    width: 8em;
+    margin: -0.6em -0.5em;
+}
+
+.list {
+    padding-left: 1em;
+    counter-reset: list-counter;
+}
+
+.list > p:not(.tips) {
+    counter-increment: list-counter;
+}
+
+.list > p:not(.tips)::before {
+    content: counter(list-counter) ". ";
+}
+
+.list > p.tips::before {
+    content: "※ ";
+}
+
+.list > img {
+    display: inline-block;
+    width: calc(50% - 1rem);
+    max-width: 30rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 0 4px #000;
+}
+
+.title-top{
+    margin-left:1rem;
+    color:white;
+    text-decoration: none;
+}
+
+.menber-img {
+    display: inline-block;
+    width: 40%;
+    background-color:white;
+    border-radius:30px;
+}
+
+.emphasis
+{
+    font-size:80%;
+    font-weight:bolder;
+}
+
+.howto-list{
+    font-size:3vw;
+}
+
+.howto-list > li {
+    margin:0.3em;
+}
+
+.howto-top{
+    position: fixed;
+    display: block;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 2rem;
+    font-size:80%;
+    color:white;
+    background: rgb(61, 61, 61);
+    padding: 0 20px 0 20px;
+    border: solid 1px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px -6px rgba(0,0,0,.5), 0 3px 10px -4px rgba(0,0,0,.2);
+    transition: all 0.2s; 
+    opacity: 1;
+}
+
+.howto-top.hidden{
+    opacity: 0;
+}
+
+li{
+    list-style-type: none;
+}

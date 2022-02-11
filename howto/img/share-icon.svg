@@ -1,0 +1,7 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <ellipse stroke="#000" fill="rgb(61, 54, 47)" stroke-width="0" cx="308.032401" cy="65.953124" id="svg_1" rx="63.499999" ry="63.499999"/>
+  <ellipse stroke="#000" transform="rotate(-2.3463096618652344 66.42386627197479,199.9999694824219) " fill="rgb(61, 54, 47)" stroke-width="0" cx="66.423868" cy="199.999999" id="svg_2" rx="63.490775" ry="63.490775"/>
+  <ellipse stroke="#000" fill="rgb(61, 54, 47)" stroke-width="0" cx="309.032396" cy="335.737781" id="svg_3" rx="62.500004" ry="62.500004"/>
+  <line stroke="rgb(61, 54, 47)" transform="rotate(3 190.0162048339854,127.22732543945307) " fill="none" x1="299.016201" y1="62.227334" x2="81.016201" y2="192.227334" id="svg_4" stroke-linejoin="null" stroke-linecap="null" stroke-width="30"/>
+  <line fill="none" x1="292.85018" y1="204.704113" x2="70.408096" y2="330.202138" id="svg_5" stroke-linejoin="null" stroke-linecap="null" stroke-width="30" transform="rotate(59 181.62915039062497,267.453125) " stroke="rgb(61, 54, 47)"/>
+</svg>
